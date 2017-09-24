@@ -1,0 +1,47 @@
+#contact{
+	> section{
+		max-width: 1280px;
+		margin: auto;
+	}
+	> .lost{
+		padding: 0.5em;
+		@media only screen and  (min-width: $screen-m) {
+			padding: 0 4em 0em;
+		}		
+		> div{
+			lost-column: 1;
+			@media only screen and  (min-width: $screen-m) {
+				lost-waffle: 1/2 2 60px;		
+			}
+		}
+	}
+	#form, #infos{
+		margin-top: 1em;
+	}
+	.address{
+		text-align: left;
+	}
+	#map{
+		margin-top: 20px;
+	}
+	form{
+		margin-top: 0;
+		text-align: right;	
+		@media only screen and  (min-width: $screen-m) {
+			margin-top: 35px;
+		}
+	}
+	.overlay{
+		height: 50px;
+		font-family: $androgyne;
+		font-size: 33px;
+		color: $grey;
+		background-color: $green;
+	}
+	button{
+		margin-top: 5px;
+	}
+	.g-recaptcha > div > div{
+		margin-right: 0;
+	}
+}

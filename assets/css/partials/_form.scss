@@ -1,0 +1,90 @@
+$form-padding: 0.7em;
+$form-tmarg: 1.8em;
+$form-border-radius: 5px;
+
+form div{
+	position: relative;
+}
+
+input, textarea{
+	width: 100%;
+	padding: $form-padding;
+	border: none;
+	border: 1px solid $grey;
+	border-radius: $form-border-radius;
+	margin-top: $form-tmarg;
+	position: relative;
+	box-sizing: border-box;
+	&:valid,
+  	&:empty:valid,
+  	&:focus:empty:valid {
+		+ label{
+			transform: translateY(-135%);
+			color: $green;
+			font-size: 0.7em;
+			@media only screen and  (min-width: $screen-xs) {
+				transform: translateY(-150%);
+				font-size: 0.9em;
+			}
+		}
+	}
+  	&:focus:invalid{
+  		+ label {
+    		color: $pinterest;
+			transform: translateY(-135%);
+			font-size: 0.7em;
+			@media only screen and  (min-width: $screen-xs) {
+				transform: translateY(-150%);
+				font-size: 0.9em;
+			}
+  		}
+  	}
+}
+
+label{
+	font-weight: 200;
+	text-transform: uppercase;
+	transition: transform 225ms ease-in-out;
+	font-size: 1.2em;
+}
+
+.js .floating-labels .cd-label{
+	position: absolute;
+	top: 28px;
+	left: 12px;
+	cursor: text;
+	z-index: 5;
+	@media only screen and  (min-width: $screen-xs) {
+		top: 38px;
+	}
+}
+
+select {
+	background-color: #fff;
+  	appearance: none;
+  	cursor: pointer;
+  	padding: $form-padding;
+  	margin-top: $form-tmarg;
+  	display: block;
+	width: 100%;
+
+}
+
+.select:after{
+	clear: both;
+    display: block;
+    position: absolute;
+    top: 40%;
+    right:  12px;
+    content:  "";
+    height: 0;
+    width: 0;
+    padding: 0;
+    border: 10px solid transparent;
+    border-top-color: $grey;
+    option{text-transform: uppercase;}
+}
+.error{
+	text-align: right;
+	color: $pinterest;
+}

@@ -1,0 +1,90 @@
+.modal{
+	display: none;
+	position: absolute;
+	top: 5em;
+	left: 50%;
+	transform: translateX(-50%);
+	width: 95%;
+	max-width: 1200px;
+	border-radius: 0.3em;
+	z-index: 36;
+	background-color: #fff;
+	overflow: hidden;
+	&.modal--show{
+		display: block;
+	}
+}
+
+.open-day{
+	font-family: $androgyne;
+	border-radius: 0.6em;
+	h2, h3{
+		font-family: $androgyne;
+		margin: 0;
+		padding: 0;
+	}
+	h3{
+		font-size: 1.7em;
+	}	
+	> div{
+		padding: 2em;
+		&.open-day__imgs{
+			padding: 0em;
+		}
+	}
+	> div:first-child, > div:last-child{
+		color: $grey--light;
+		background-color: $green;
+	}
+	> div:first-child{
+		lost-utility: clearfix;
+		& > div{
+			box-sizing: border-box;
+			lost-column: 1;			
+			@media only screen and  (min-width: $screen-m) {
+				lost-column: 1/2;			
+			}	
+		}
+	}
+}
+
+.open-day__hours{
+	text-align: center;
+	h2{
+		color: $grey--light;
+		font-size: 2.6em;
+		font-weight: 400;
+	}
+}
+
+.open-day__location{
+    border: 1px solid $grey--light;
+    padding: 1em;
+    text-align: center;
+    margin-top: 0.5em;
+    float: right;
+    font-size: 1.2em;
+}
+
+.open-day__imgs{
+	text-align: right;
+	img{
+		max-height: 100%;
+		max-width: 50%;
+		&:first-child{
+			width: 40%;
+			margin-right: 2em;
+		}
+		&:last-child{
+		}
+	}
+}
+
+.open-day__godfather{
+    letter-spacing: 0.13em;
+	strong{
+		font-weight: 200;
+		color: #fff;
+		font-size: 1.2em;
+	}
+}
