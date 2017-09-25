@@ -25,7 +25,11 @@
     "eslint-plugin-node": "^5.1.1",
     "eslint-plugin-promise": "^3.5.0",
     "eslint-plugin-standard": "^3.0.1",
+    "jstransformer-markdown-it": "^2.0.0",
+    "markdown-it": "^8.4.0",
     "node-sass": "^4.5.3",
+    "pug": "^2.0.0-rc.4",
+    "pug-loader": "^2.3.0",
     "sass-loader": "^6.0.6",
     "svg-sprite-loader": "^3.2.5",
     "svgo-loader": "^1.2.1"
