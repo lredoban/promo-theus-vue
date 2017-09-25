@@ -3,7 +3,7 @@
   	<section class="accueil__index">
   		<div>
   			<a href="#" class=" disabled">
-  				<div class="badge"><svg class="icon icon-activity"><use xlink:href="#icon-activity"></use></svg></div>
+  				<div class="badge"><SvgIcon name="activity"/></div>
   				<div>
   					<h2>Notre Activité</h2>
   					<p>Tout savoir sur l'activité<br> de Promo-Theüs</p>
@@ -12,7 +12,7 @@
   		</div>
   		<div>
   			<nuxt-link to="/realisations">
-  				<div class="badge"><svg class="icon icon-real"><use xlink:href="#icon-real"></use></svg></div>
+  				<div class="badge"><SvgIcon name="real"/></div>
   				<div>
   					<h2>Nos Réalisations</h2>
   					<p>Découvrez le travail <br>de toute une équipe</p>
@@ -21,7 +21,7 @@
   		</div>
   		<div>
   			<nuxt-link to="/terrains">
-  				<div class="badge"><svg class="icon icon-land"><use xlink:href="#icon-land"></use></svg></div>
+  				<div class="badge"><SvgIcon name="land" /></div>
   				<div>
   					<h2>Nos Terrains</h2>
   					<p>Les biens que nous <br> proposons à la vente</p>
@@ -30,7 +30,7 @@
   		</div>
   		<div>
   			<nuxt-link to="/contact">
-  				<div class="badge"><svg class="icon icon-contact"><use xlink:href="#icon-contact"></use></svg></div>
+  				<div class="badge"><SvgIcon name="contact"/></div>
   				<div>
   					<h2>Nous Contacter</h2>
   					<p>Nous répondrons à vos <br>questions au plus vite</p>
@@ -50,6 +50,8 @@
 </template>
 
 <script>
+import SvgIcon from '~/components/SvgIcon.vue'
+
 var cache = {}
 
 function importAll (r) {
@@ -61,6 +63,7 @@ importAll(require.context('~/assets/img/index', true, /\.(jpg|png)$/))
 const yo = previewArray.keys().forEach(previewArray) */
 
 export default {
+  components: { SvgIcon },
   data: () => {
     return {
       images: cache

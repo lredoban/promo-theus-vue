@@ -1,3 +1,5 @@
+const path = require('path')
+
 module.exports = {
   /*
   ** Headers of the page
@@ -31,6 +33,34 @@ module.exports = {
           test: /\.(js|vue)$/,
           loader: 'eslint-loader',
           exclude: /(node_modules)/
+        })
+        config.module.rules.filter(v => v.test.toString() === String(/\.(png|jpe?g|gif|svg)$/))
+          .map(v => { v.test = /\.(png|jpe?g|gif)$/ })
+        config.module.rules.push({
+          test: /\.svg$/,
+          include: path.resolve('./assets/img'),
+          loader: 'url-loader',
+          query: {
+            limit: 1000, // 1KO
+            name: 'img/[name].[hash:7].[ext]'
+          }
+        })
+        config.module.rules.push({
+          test: /\.svg$/,
+          include: path.resolve('./assets/svg'),
+          use: [
+            'svg-sprite-loader',
+            {
+              loader: 'svgo-loader',
+              options: {
+                plugins: [
+                  {removeTitle: true},
+                  {removeUselessStrokeAndFill: true},
+                  { removeAttrs: {attrs: 'fill'} }
+                ]
+              }
+            }
+          ]
         })
       }
     }
