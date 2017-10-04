@@ -21,10 +21,8 @@ input, textarea{
 		+ label{
 			transform: translateY(-135%);
 			color: $green;
-			font-size: 0.7em;
 			@media only screen and  (min-width: $screen-xs) {
 				transform: translateY(-150%);
-				font-size: 0.9em;
 			}
 		}
 	}
@@ -32,10 +30,8 @@ input, textarea{
   		+ label {
     		color: $pinterest;
 			transform: translateY(-135%);
-			font-size: 0.7em;
 			@media only screen and  (min-width: $screen-xs) {
 				transform: translateY(-150%);
-				font-size: 0.9em;
 			}
   		}
   	}
@@ -45,7 +41,7 @@ label{
 	font-weight: 200;
 	text-transform: uppercase;
 	transition: transform 225ms ease-in-out;
-	font-size: 1.2em;
+	font-size: 1.4em;
 }
 
 .js .floating-labels .cd-label{

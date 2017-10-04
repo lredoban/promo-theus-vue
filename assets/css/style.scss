@@ -164,7 +164,7 @@ body.overlay-layer{
 main{
 	text-align: center;
 	padding-top: 30px;
-	padding-bottom: 10px;
+  padding-bottom: 3em;
 	background-color: $grey--light;
 	font-size: 70%;
   min-height: calc(100vh - #{$footer-height});
@@ -174,7 +174,6 @@ main{
 	@media only screen and  (min-width: $screen-m) {
     min-height: calc(100vh - #{$header-height} - #{$footer-height});
 		padding-top: 10px;
-		padding-bottom: 2em;
 	}
 }
 
@@ -295,11 +294,14 @@ footer{
 }
 
 #footer__right{
-	padding: 10px;
 	padding-right: 25px;
 	text-align: right;
 	font-family: $androgyne;
 	font-size: 1.4em;
+  display: none;
+  @media only screen and  (min-width: $screen-m) {
+    display: block;
+  }
 }
 
 .slick-arrow{

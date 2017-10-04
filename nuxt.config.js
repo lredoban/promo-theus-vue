@@ -18,7 +18,7 @@ module.exports = {
   /*
   ** Customize the progress bar color
   */
-  loading: { color: '#3B8070' },
+  loading: { color: '#83b93f' },
   /*
   ** Build configuration
   */
@@ -67,5 +67,6 @@ module.exports = {
   },
   css: [
     '@/assets/css/style.scss'
-  ]
+  ],
+  plugins: ['~/plugins/vuelidate', '~/plugins/loadSvgs.js']
 }

@@ -5,12 +5,6 @@
 </template>
 
 <script>
-function importAll (r) {
-  r.keys().forEach(key => { r(key) })
-}
-
-importAll(require.context('~/assets/svg', true, /\.svg$/))
-
 export default {
   props: {
     name: {

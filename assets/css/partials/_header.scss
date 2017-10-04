@@ -18,21 +18,21 @@ header{
 		display: inline-block;
 	}
 	.logo{
-		padding-left: 150px;
+    margin-left: 15px;
 		img{
-			height: 140px;
+			height: 150px;
 			width: auto;
 			margin-top: 15px;
-			margin-bottom:10px;
 		}
 	}
 	.address{
 		text-align: right;
 		float: right;
-		padding-top: 30px;
-		padding-right: 150px;
+		padding-top: 50px;
+		padding-right: 50px;
+    margin-right: 15px;
 		color: color($grey l(70%));
-		font-size: 15px;
+		font-size: 21px;
 		span{
 			color: $green;
 			font-weight: bold;
@@ -126,7 +126,7 @@ header{
 			text-align: center;
 			font-size: 1.8em;
 			line-height: 0.8em;
-			margin: 3px;
+			margin: 5px;
 			a{
 				padding: 0 3px;
 			}
@@ -197,7 +197,7 @@ header{
 #header__top__social{
 	position:absolute;
 	overflow-x: hidden;
-	top: 0;
+	top: 30px;
 	right: 0;
 	ul{
 		margin-top: 20px;

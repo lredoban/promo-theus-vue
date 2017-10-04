@@ -30,14 +30,14 @@
                     </div>
                  </nuxt-link>
             </div>
-            <a class="nav-trigger" href="#0">
+            <a class="nav-trigger" href="#0" @click='open = !open' :class='{"nav-open": open }'>
                 Menu
                 <span aria-hidden="true"></span>
             </a>
         </div>
-        <div class="menu mobile">
+        <div class="menu mobile" :class='{"nav-open": open }'>
             <ul>
-                <li><a href="#" class="disabled">
+                <!--<li><a href="#" class="disabled">
                     <div class="square"><SvgIcon name="activity"/></div>
                     Notre Activité
                 </a></li>
@@ -48,11 +48,13 @@
                 <li><nuxt-link active-class="current" to="/terrains">
                     <div class="square"><SvgIcon name="land"/></div>
                     Nos Terrains
-                </nuxt-link></li>
-                <li><nuxt-link active-class="current" to="/contact">
-                    <div class="square"><SvgIcon name="contact"/></div>
-                    Nous contacter
-                </nuxt-link></li>
+                </nuxt-link></li>-->
+                <li @click='goTo("/")'>
+                  Accueil
+                </li>
+                <li @click='goTo("contact")'>
+                  Nous contacter
+                </li>
             </ul>
             <div class="menu__icons">
                 <ul>
@@ -64,9 +66,6 @@
         </div>
         <ul class="menu desktop">
           <nuxt-link exact-active-class="current" tag="li" to="/">Accueil</nuxt-link>
-          <li><a href="#" disabled>Notre Activité</a></li>
-          <nuxt-link exact-active-class="current" tag="li" to="/realisations">Nos Réalisations</nuxt-link>
-          <nuxt-link exact-active-class="current" tag="li" to="/terrains">Nos Terrains</nuxt-link>
           <nuxt-link exact-active-class="current" tag="li" to="/contact">Nous contacter</nuxt-link>
         </ul>
     </nav>
@@ -77,11 +76,33 @@
 import SvgIcon from '~/components/SvgIcon.vue'
 
 export default {
-  components: { SvgIcon }
+  components: { SvgIcon },
+  data () {
+    return {
+      open: false
+    }
+  },
+  methods: {
+    goTo (path) {
+      this.open = false
+      this.$router.push(path)
+    }
+  }
 }
 </script>
 
 <style scoped lang="sass">
   .menu.desktop li
     cursor: pointer
+  .menu.mobile li
+    height: 50%
+    display: flex
+    align-items: center
+    justify-content: center
+    cursor: pointer
+  .menu__icons>ul
+    display: flex
+    justify-content: flex-end
+    margin: 0
+    padding: 0
 </style>

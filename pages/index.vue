@@ -1,79 +1,23 @@
 <template>
   <main id="accueil">
-  	<section class="accueil__index">
-  		<div>
-  			<a href="#" class=" disabled">
-  				<div class="badge"><SvgIcon name="activity"/></div>
-  				<div>
-  					<h2>Notre Activité</h2>
-  					<p>Tout savoir sur l'activité<br> de Promo-Theüs</p>
-  				</div>
-  			</a>
-  		</div>
-  		<div>
-  			<nuxt-link to="/realisations">
-  				<div class="badge"><SvgIcon name="real"/></div>
-  				<div>
-  					<h2>Nos Réalisations</h2>
-  					<p>Découvrez le travail <br>de toute une équipe</p>
-  				</div>
-  			</nuxt-link>
-  		</div>
-  		<div>
-  			<nuxt-link to="/terrains">
-  				<div class="badge"><SvgIcon name="land" /></div>
-  				<div>
-  					<h2>Nos Terrains</h2>
-  					<p>Les biens que nous <br> proposons à la vente</p>
-  				</div>
-  			</nuxt-link>
-  		</div>
-  		<div>
-  			<nuxt-link to="/contact">
-  				<div class="badge"><SvgIcon name="contact"/></div>
-  				<div>
-  					<h2>Nous Contacter</h2>
-  					<p>Nous répondrons à vos <br>questions au plus vite</p>
-  				</div>
-  			</nuxt-link>
-  		</div>
-  	</section>
-  	<section>
-  		<nuxt-link to="contact" class="btn">Contactez-nous</nuxt-link>
-  	</section>
-  	<section class="show-img desktop">
-      <div v-for="(img, origin) of images">
-        <img :src="img" :alt="origin.slice(2).slice(0,-4)">
-      </div>
-  	</section>
+    <h1>SITE INTERNET EN MAINTENANCE</h1>
+    <p>
+      <strong>Afin de pouvoir procéder à des mises à jour, notre site internet est en maintenance.</strong><br>
+      Cependant, la rubrique <nuxt-link to='/contact'>contact</nuxt-link> est toujours disponible. Et vous pouvez continuer à nous suivre sur :
+    </p>
+    <div class="social">
+      <a href="http://www.instagram.com/promo.theus.developpement/"><img src="~/assets/img/instagram_logo.png" alt="instagram"></a>
+      <a href="http://www.facebook.com/promo.theus.developpement/"><img src="~/assets/img/facebook_logo.png" alt="facebook"></a>
+    </div>
+    <p>pour accéder à notre profil instagram et à notre page cliquez directement sur l’icône que vous souhaitez</p>
+    <p><strong>Nous restons bien entendu joignables par :
+      téléphone, mail, et sur les réseaux sociaux.
+    </strong></p>
+    <p>A très bientôt,
+      L’équipe Promo-Theüs
+    </p>
   </main>
 </template>
-
-<script>
-import SvgIcon from '~/components/SvgIcon.vue'
-
-var cache = {}
-
-function importAll (r) {
-  r.keys().forEach(key => { cache[key] = r(key) })
-}
-
-importAll(require.context('~/assets/img/index', true, /\.(jpg|png)$/))
-/* const previewArray = require.context('~/assets/img/index', false, /^\.\/.*\.jpg$/)
-const yo = previewArray.keys().forEach(previewArray) */
-
-export default {
-  components: { SvgIcon },
-  data: () => {
-    return {
-      images: cache
-    }
-  },
-  mounted: () => {
-    console.warn(cache)
-  }
-}
-</script>
 
 <style scoped lang="sass">
   @import ~assets/css/base/_variables.scss
@@ -110,5 +54,16 @@ export default {
         height: 100%
     @media only screen and  (min-width: $screen-m)
       display: flex
-
+  strong
+    font-size: 1.4em
+    color: $green
+  p
+    text-align: center
+  a
+    color: $green
+    font-size: 110%
+  .social
+    img
+      height: 150px
+      margin-right: 40px
 </style>
