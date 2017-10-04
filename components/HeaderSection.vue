@@ -16,7 +16,7 @@
           <ul>
               <li><a href="http://www.facebook.com/promo.theus.developpement" class="facebook" target="_blank"><span>facebook</span><SvgIcon name="facebook"/></a></li>
               <li><a href="//plus.google.com/101357276651616256581/about" class="googleplus" target="_blank"><span>google plus</span><SvgIcon name="googleplus"/></a></li>
-              <li><a href="http://www.instagram.com/promotheusdeveloppement/" class="instagram" target="_blank"><span>instagram</span><SvgIcon name="instagram"/></a></li>
+              <li><a href="http://www.instagram.com/promo.theus.developpement/" class="instagram" target="_blank"><span>instagram</span><SvgIcon name="instagram"/></a></li>
           </ul>
       </div>
     </section>
@@ -60,7 +60,7 @@
                 <ul>
                     <li><a href="http://www.facebook.com/promo.theus.developpement" class="facebook" target="_blank"><SvgIcon name="facebook"/></a></li>
                     <li><a href="//plus.google.com/101357276651616256581/about" class="googleplus" target="_blank"><SvgIcon name="googleplus"/></a></li>
-                    <li><a href="http://www.instagram.com/promotheusdeveloppement/" class="instagram" target="_blank"><SvgIcon name="instagram"/></a></li>
+                    <li><a href="http://www.instagram.com/promo.theus.developpement/" class="instagram" target="_blank"><SvgIcon name="instagram"/></a></li>
                 </ul>
             </div>
         </div>
