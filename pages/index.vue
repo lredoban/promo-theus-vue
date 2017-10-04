@@ -9,7 +9,7 @@
       <a href="http://www.instagram.com/promo.theus.developpement/"><img src="~/assets/img/instagram_logo.png" alt="instagram"></a>
       <a href="http://www.facebook.com/promo.theus.developpement/"><img src="~/assets/img/facebook_logo.png" alt="facebook"></a>
     </div>
-    <p>pour accéder à notre profil instagram et à notre page cliquez directement sur l’icône que vous souhaitez</p>
+    <p>pour accéder à notre profil instagram et à notre page facebook cliquez directement sur l’icône que vous souhaitez</p>
     <p><strong>Nous restons bien entendu joignables par :
       téléphone, mail, et sur les réseaux sociaux.
     </strong></p>
