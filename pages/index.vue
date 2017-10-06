@@ -3,7 +3,7 @@
     <h1>SITE INTERNET EN MAINTENANCE</h1>
     <p>
       <strong>Afin de pouvoir procéder à des mises à jour, notre site internet est en maintenance.</strong><br>
-      Cependant, la rubrique <nuxt-link to='/contact'>contact</nuxt-link> est toujours disponible. Et vous pouvez continuer à nous suivre sur :
+      Cependant, la rubrique <nuxt-link to='/contact'>Nous Contacter</nuxt-link> est toujours disponible. Et vous pouvez continuer à nous suivre sur :
     </p>
     <div class="social">
       <a href="http://www.instagram.com/promo.theus.developpement/"><img src="~/assets/img/instagram_logo.png" alt="instagram"></a>
