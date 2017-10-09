@@ -12,3 +12,6 @@ dist
 
 # Mac files
 .DS_Store
+
+# Surge
+static/CNAME
