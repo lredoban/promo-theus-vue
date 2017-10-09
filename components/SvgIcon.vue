@@ -1,7 +1,5 @@
 <template lang="html">
-  <svg :class="'icon icon-' + name">
-    <use :xlink:href="'#' + name"></use>
-  </svg>
+  <object class="icon" type="image/svg+xml" :data="basedData"></object>
 </template>
 
 <script>
@@ -11,6 +9,9 @@ export default {
       type: String,
       required: true
     }
+  },
+  computed: {
+    basedData () { return require(`~/assets/svg/${this.name}.svg`) }
   }
 }
 </script>

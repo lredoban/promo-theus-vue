@@ -14,9 +14,9 @@
       </div>
       <div id="header__top__social">
           <ul>
-              <li><a href="http://www.facebook.com/promo.theus.developpement" class="facebook" target="_blank"><span>facebook</span><SvgIcon name="facebook"/></a></li>
-              <li><a href="//plus.google.com/101357276651616256581/about" class="googleplus" target="_blank"><span>google plus</span><SvgIcon name="googleplus"/></a></li>
-              <li><a href="http://www.instagram.com/promo.theus.developpement/" class="instagram" target="_blank"><span>instagram</span><SvgIcon name="instagram"/></a></li>
+              <li><a href="http://www.facebook.com/promo.theus.developpement" class="facebook" target="_blank"><span>facebook</span><SvgIcon name="facebook-colored"/></a></li>
+              <li><a href="//plus.google.com/101357276651616256581/about" class="googleplus" target="_blank"><span>google plus</span><SvgIcon name="googleplus-colored"/></a></li>
+              <li><a href="http://www.instagram.com/promo.theus.developpement/" class="instagram" target="_blank"><span>instagram</span><SvgIcon name="instagram-colored"/></a></li>
           </ul>
       </div>
     </section>
@@ -38,15 +38,15 @@
         <div class="menu mobile" :class='{"nav-open": open }'>
             <ul>
                 <!--<li><a href="#" class="disabled">
-                    <div class="square"><SvgIcon name="activity"/></div>
+                    <div class="square"><SvgIcon name="activity-colored"/></div>
                     Notre Activité
                 </a></li>
                 <li><nuxt-link active-class="current" to="/realisations">
-                    <div class="square"><SvgIcon name="real"/></div>
+                    <div class="square"><SvgIcon name="real-colored"/></div>
                     Nos Réalisations
                 </nuxt-link></li>
                 <li><nuxt-link active-class="current" to="/terrains">
-                    <div class="square"><SvgIcon name="land"/></div>
+                    <div class="square"><SvgIcon name="land-colored"/></div>
                     Nos Terrains
                 </nuxt-link></li>-->
                 <li @click='goTo("/")'>
